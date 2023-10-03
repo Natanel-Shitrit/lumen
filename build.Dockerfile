@@ -1,5 +1,5 @@
 
-# docker build -t lumen-builer -f build.Dockerfile .
+# docker build -t lumen-builder -f build.Dockerfile .
 # docker run --rm -v `pwd`/out:/out -it lumen-builder
 
 FROM rust:latest
