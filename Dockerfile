@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM rust:1.68.2-slim-buster
+FROM --platform=$BUILDPLATFORM rust:1.70.0-slim-buster
 ARG	DEBIAN_FRONTEND=noninteractive
 RUN	apt-get update && apt-get install -y --no-install-recommends --no-install-suggests ca-certificates pkg-config libssl-dev libpq-dev
 ENV CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse
