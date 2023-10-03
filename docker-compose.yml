@@ -23,7 +23,7 @@ services:
 
     lumina:
         build: .
-        image: ghcr.io/naim94a/lumen:master
+        container_name: lumina
         depends_on:
             db:
                 condition: service_healthy
