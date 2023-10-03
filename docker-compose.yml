@@ -30,6 +30,8 @@ services:
         ports:
             - 1234:1234
             - 8082:8082
+        environment:
+            DATABASE_URL: postgres://lumina:1@db/lumina
         volumes:
             - /stacks/lumen:/dockershare
         links:
